@@ -12,9 +12,9 @@ public class UI {
         System.out.print("""
                 Please select the numerical value of the day to be ran
                     1. Day 1
-                    2.
-                    3.
-                    4.
+                    2. Day 2
+                    3. Day 3
+                    4. Day 4
                     
                 Input: """);
        return scanner.nextInt();
