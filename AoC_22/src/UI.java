@@ -27,7 +27,7 @@ public class UI {
                 break;
 
             case 2:
-                //day two
+                today.dayTwo();
                 break;
         }
     }
