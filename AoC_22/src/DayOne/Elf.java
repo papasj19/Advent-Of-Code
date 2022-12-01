@@ -2,18 +2,18 @@ package DayOne;
 
 public class Elf {
 
-    private int Calories;
+    private int calories;
     private int numPackages;
     private boolean isMax;
 
     public Elf(int calories, int numPackages, boolean isMax) {
-        Calories = calories;
+        this.calories = calories;
         this.numPackages = numPackages;
         this.isMax = isMax;
     }
 
     public Elf(int calories) {
-        Calories = calories;
+        this.calories = calories;
     }
 
     public int getCalories() {
