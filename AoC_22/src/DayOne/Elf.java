@@ -17,7 +17,7 @@ public class Elf {
     }
 
     public int getCalories() {
-        return Calories;
+        return calories;
     }
 
     public void setMax(boolean max) {
