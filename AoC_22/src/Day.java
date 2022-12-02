@@ -37,13 +37,18 @@ public class Day {
             Scanner fileReader = new Scanner(file);
             int total = 0;
             int temp = 0;
+            int temp2 = 0;
+            int tot2 = 0;
             do{
                 String dataOp = fileReader.next();
                 String dataMe = fileReader.next();
-                temp = myAnalysis.checker(dataOp,dataMe);
+                temp = myAnalysis.checkerpt1(dataOp,dataMe);
+                temp2 = myAnalysis.checkerpt2(dataOp,dataMe);
                 total += temp;
+                tot2 += temp2;
             }while(fileReader.hasNext());
             System.out.println("\n\tPart 1: " + total);
+            System.out.println("\n\tPart 2: " + tot2);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -10,7 +10,7 @@ public class dataAnalyzer {
     }
 
 
-    public int checker(String op, String me){
+    public int checkerpt1(String op, String me){
         int status = 0;
         if(op.equalsIgnoreCase("A")){
             if(me.equalsIgnoreCase("X")){
@@ -47,6 +47,53 @@ public class dataAnalyzer {
                         }else{
                             if(me.equalsIgnoreCase("Z")){
                                 status = 6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return status;
+    }
+
+
+    public int checkerpt2(String op, String me){
+        int status = 0;
+        if(op.equalsIgnoreCase("A")){
+            if(me.equalsIgnoreCase("X")){
+                status = 3;
+            }else{
+                if(me.equalsIgnoreCase("Y")){
+                    status = 4;
+                }else{
+                    if(me.equalsIgnoreCase("Z")){
+                        status = 8;
+                    }
+                }
+            }
+        }else{
+            if(op.equalsIgnoreCase("B")){
+                if(me.equalsIgnoreCase("X")){
+                    status = 1;
+                }else{
+                    if(me.equalsIgnoreCase("Y")){
+                        status = 5;
+                    }else{
+                        if(me.equalsIgnoreCase("Z")){
+                            status = 9;
+                        }
+                    }
+                }
+            }else{
+                if(op.equalsIgnoreCase("C")){
+                    if(me.equalsIgnoreCase("X")){
+                        status = 2;
+                    }else{
+                        if(me.equalsIgnoreCase("Y")){
+                            status = 6;
+                        }else{
+                            if(me.equalsIgnoreCase("Z")){
+                                status = 7;
                             }
                         }
                     }
