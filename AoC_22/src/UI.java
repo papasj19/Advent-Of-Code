@@ -29,6 +29,10 @@ public class UI {
             case 2:
                 today.dayTwo();
                 break;
+
+            case 3:
+                today.dayThree();
+                break;
         }
     }
 

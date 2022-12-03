@@ -1,5 +1,8 @@
 import DayOne.ElfCalorieDAO;
 import DayOne.ElfManager;
+import DayThree.GroupRucksackManager;
+import DayThree.RucksackDAO;
+import DayThree.RucksackManager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -52,6 +55,16 @@ public class Day {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public void dayThree(){
+        RucksackDAO myDAO = new RucksackDAO();
+        RucksackManager manager = new RucksackManager(myDAO.read());
+        manager.printComLet();
+
+        GroupRucksackManager groupRucksackManager = new GroupRucksackManager(myDAO.readpt2());
+        int totalPt2 = groupRucksackManager.determineValue();
+        System.out.println(totalPt2);
     }
 
 
