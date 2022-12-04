@@ -1,3 +1,7 @@
+package DayFour;
+
+import DayFour.PairID;
+
 import java.util.ArrayList;
 
 public class PairManager {

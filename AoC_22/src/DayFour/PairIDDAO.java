@@ -1,3 +1,7 @@
+package DayFour;
+
+import DayFour.PairID;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -9,11 +13,12 @@ public class PairIDDAO {
     }
 
 
-    public int read(){
+    public String read(){
         File file = new File("PairIDdata");
-        ArrayList<PairID> toReturn = new ArrayList<>();
+        //ArrayList<PairID> toReturn = new ArrayList<>();
         int total = 0;
         int totalpt2 = 0;
+        String message = null;
         try {
             Scanner fileReader = new Scanner(file);
             do{
@@ -34,12 +39,12 @@ public class PairIDDAO {
                 }
 
             }while(fileReader.hasNext());
-            System.out.println("total pt 2: " + totalpt2);
-            return total;
+             message = "The total for part 1: " + total+ "  total pt 2: " + totalpt2;
+            return message;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-      return total;
+      return message;
 
 
     }

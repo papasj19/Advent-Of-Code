@@ -15,6 +15,7 @@ public class UI {
                     2. Day 2
                     3. Day 3
                     4. Day 4
+                    5. Day 5
                     
                 Input: """);
        return scanner.nextInt();
@@ -36,6 +37,10 @@ public class UI {
 
             case 4:
                 today.dayFour();
+                break;
+
+            case 5:
+                today.dayFive();
                 break;
         }
     }

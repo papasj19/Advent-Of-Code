@@ -1,3 +1,5 @@
+package DayFour;
+
 public class PairID {
 
     private int startingA;

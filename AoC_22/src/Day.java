@@ -1,3 +1,4 @@
+import DayFour.PairIDDAO;
 import DayOne.ElfCalorieDAO;
 import DayOne.ElfManager;
 import DayThree.GroupRucksackManager;
@@ -69,14 +70,11 @@ public class Day {
 
     public void dayFour(){
         PairIDDAO myDAO = new PairIDDAO();
-        //PairManager myManager = new PairManager(myDAO.read());
-        //int total = myManager.calcNumberRepeated();
-        int total = myDAO.read();
-        System.out.println("Part 1: " +total);
+        System.out.println(myDAO.read());
     }
 
 
-
-
-
+    public void dayFive() {
+        System.out.println("see you soon ");
+    }
 }
