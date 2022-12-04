@@ -67,6 +67,14 @@ public class Day {
         System.out.println(totalPt2);
     }
 
+    public void dayFour(){
+        PairIDDAO myDAO = new PairIDDAO();
+        //PairManager myManager = new PairManager(myDAO.read());
+        //int total = myManager.calcNumberRepeated();
+        int total = myDAO.read();
+        System.out.println("Part 1: " +total);
+    }
+
 
 
 

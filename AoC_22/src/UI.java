@@ -33,6 +33,10 @@ public class UI {
             case 3:
                 today.dayThree();
                 break;
+
+            case 4:
+                today.dayFour();
+                break;
         }
     }
 
