@@ -83,15 +83,15 @@ public class UI {
     public void runDay610(){
         switch (askDay610()){
             case 6:
-                today.dayOne();
+                today.daySix();
                 break;
 
             case 7:
-                today.dayTwo();
+
                 break;
 
             case 8:
-                today.dayThree();
+
                 break;
         }
     }

@@ -1,3 +1,4 @@
+import DayFive.SupplyStack;
 import DayFour.PairIDDAO;
 import DayOne.ElfCalorieDAO;
 import DayOne.ElfManager;
@@ -13,10 +14,14 @@ public class Day {
 
     private ElfCalorieDAO myDAO = new ElfCalorieDAO();
 
+    public void daySix(){
+        System.out.println("See you soon");
+    }
+
     public void dayFive() {
-        String fileName = "blank";
-        newDAO newDAO = new newDAO();
-        newDAO.read(fileName);
+        String fileName = "SupplyStackdata";
+        SupplyStack SupplyStack = new SupplyStack();
+        SupplyStack.read(fileName);
     }
 
     public void dayFour(){
