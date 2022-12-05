@@ -13,25 +13,25 @@ public class Day {
 
     private ElfCalorieDAO myDAO = new ElfCalorieDAO();
 
+    public void dayFive() {
+        String fileName = "blank";
+        newDAO newDAO = new newDAO();
+        newDAO.read(fileName);
+    }
 
+    public void dayFour(){
+        PairIDDAO myDAO = new PairIDDAO();
+        System.out.println(myDAO.read());
+    }
 
-    public void dayOne(){
+    public void dayThree(){
+        RucksackDAO myDAO = new RucksackDAO();
+        RucksackManager manager = new RucksackManager(myDAO.read());
+        manager.printComLet();
 
-        try {
-            ElfManager myElves = new ElfManager(myDAO.readData("Elfcaloriedata"));
-            myElves.transformInfo();
-            int maxCal = myElves.findAndPrintMax();
-            System.out.println(maxCal);
-            int secMax = myElves.findAndSecond(maxCal);
-            System.out.println(secMax);
-            int thirdMax = myElves.findThird(maxCal,secMax);
-            System.out.println(thirdMax);
-
-            int total = maxCal + secMax + thirdMax;
-            System.out.println("Total Cals by top 3: " + total);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        GroupRucksackManager groupRucksackManager = new GroupRucksackManager(myDAO.readpt2());
+        int totalPt2 = groupRucksackManager.determineValue();
+        System.out.println(totalPt2);
     }
 
     public void dayTwo(){
@@ -58,23 +58,30 @@ public class Day {
         }
     }
 
-    public void dayThree(){
-        RucksackDAO myDAO = new RucksackDAO();
-        RucksackManager manager = new RucksackManager(myDAO.read());
-        manager.printComLet();
+    public void dayOne(){
 
-        GroupRucksackManager groupRucksackManager = new GroupRucksackManager(myDAO.readpt2());
-        int totalPt2 = groupRucksackManager.determineValue();
-        System.out.println(totalPt2);
+        try {
+            ElfManager myElves = new ElfManager(myDAO.readData("Elfcaloriedata"));
+            myElves.transformInfo();
+            int maxCal = myElves.findAndPrintMax();
+            System.out.println(maxCal);
+            int secMax = myElves.findAndSecond(maxCal);
+            System.out.println(secMax);
+            int thirdMax = myElves.findThird(maxCal,secMax);
+            System.out.println(thirdMax);
+
+            int total = maxCal + secMax + thirdMax;
+            System.out.println("Total Cals by top 3: " + total);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void dayFour(){
-        PairIDDAO myDAO = new PairIDDAO();
-        System.out.println(myDAO.read());
-    }
 
 
-    public void dayFive() {
-        System.out.println("see you soon ");
-    }
+
+
+
+
+
 }
