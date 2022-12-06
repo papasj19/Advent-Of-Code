@@ -12,10 +12,13 @@ import java.util.Scanner;
 
 public class Day {
 
-    private ElfCalorieDAO myDAO = new ElfCalorieDAO();
+
 
     public void daySix(){
-        System.out.println("See you soon");
+        TuningTroubleDAO theDAO = new TuningTroubleDAO();
+       TuningTroubleManager myManager = new TuningTroubleManager(theDAO.read());
+        //System.out.println(myManager.analyze());
+        System.out.println(myManager.analyzept2());
     }
 
     public void dayFive() {
@@ -64,7 +67,7 @@ public class Day {
     }
 
     public void dayOne(){
-
+        ElfCalorieDAO myDAO = new ElfCalorieDAO();
         try {
             ElfManager myElves = new ElfManager(myDAO.readData("Elfcaloriedata"));
             myElves.transformInfo();

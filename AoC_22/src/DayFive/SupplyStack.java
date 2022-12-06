@@ -191,8 +191,8 @@ public class SupplyStack {
                     destinationStack= Integer.parseInt(Character.toString(temp.charAt(18)));
                 }
 
-                //runPartOne(numMove,sourceStack,destinationStack);
-                runPartTwo(numMove,sourceStack,destinationStack);
+                runPartOne(numMove,sourceStack,destinationStack);
+                //runPartTwo(numMove,sourceStack,destinationStack);
             }while(fileReader.hasNext());
 
             //System.out.println(runSmallSet());
