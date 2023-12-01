@@ -32,11 +32,11 @@ public class UI {
     public int askDay610(){
         System.out.print("""
                 Please select the numerical value of the day to be ran
-                    1. Day 6
-                    2. Day 7
-                    3. Day 8
-                    4. Day 9
-                    5. Day 10
+                    6. Day 6
+                    7. Day 7
+                    8. Day 8
+                    9. Day 9
+                    10. Day 10
                     
                 Input: """);
         return scanner.nextInt();
@@ -87,7 +87,7 @@ public class UI {
                 break;
 
             case 7:
-
+                today.daySeven();
                 break;
 
             case 8:

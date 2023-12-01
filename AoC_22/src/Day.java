@@ -2,6 +2,8 @@ import DayFive.SupplyStack;
 import DayFour.PairIDDAO;
 import DayOne.ElfCalorieDAO;
 import DayOne.ElfManager;
+import DaySix.TuningTroubleDAO;
+import DaySix.TuningTroubleManager;
 import DayThree.GroupRucksackManager;
 import DayThree.RucksackDAO;
 import DayThree.RucksackManager;
@@ -13,6 +15,11 @@ import java.util.Scanner;
 public class Day {
 
 
+
+    public void daySeven() {
+        NoSpaceLeftDAO myDAO = new NoSpaceLeftDAO();
+        DirectoryManager manager = new DirectoryManager(myDAO.read());
+    }
 
     public void daySix(){
         TuningTroubleDAO theDAO = new TuningTroubleDAO();
@@ -84,12 +91,6 @@ public class Day {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
 
 
 }
